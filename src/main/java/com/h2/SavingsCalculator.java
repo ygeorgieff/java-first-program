@@ -46,14 +46,14 @@ public class SavingsCalculator {
         float[] credits = new float[creditsAsString.length];
 
         for (int i = 0; i < creditsAsString.length; i++) {
-            float num = Float.parseFloat(creditsAsString[i]);
+            float num = Utilities.getFloatValue(creditsAsString[i]);
             credits[i] = num;
         }
 
         float[] debits = new float[debitsAsString.length];
 
         for (int i = 0; i < debitsAsString.length; i++) {
-            float num = Float.parseFloat(debitsAsString[i]);
+            float num = Utilities.getFloatValue(debitsAsString[i]);
             debits[i] = num;
         }
 
